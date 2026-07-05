@@ -3,42 +3,24 @@
 <head>
 <title>Qureshi AI Signals</title>
 </head>
-
 <body>
 
 <h1>🤖 Qureshi AI Signals</h1>
 
-<h3>Select Pair</h3>
+<p><b>Pair:</b> EUR/USD</p>
+<p><b>Time:</b> 1 Minute</p>
 
-<select>
-<option>EUR/USD</option>
-<option>GBP/USD</option>
-<option>USD/JPY</option>
-<option>AUD/USD</option>
-<option>USD/CAD</option>
-</select>
+<button onclick="analyze()">Analyze Market</button>
 
-<br><br>
+<h2 id="signal">WAIT ⏳</h2>
+<h3 id="confidence">Confidence: 0%</h3>
 
-<h3>Select Time</h3>
-
-<select>
-<option>1 Minute</option>
-<option>5 Minutes</option>
-<option>10 Minutes</option>
-</select>
-
-<br><br>
-
-<button>Analyze Market</button>
-
-<h2>Signal</h2>
-
-<p>WAIT ⏳</p>
-
-<h2>Confidence</h2>
-
-<p>0%</p>
+<script>
+function analyze() {
+  document.getElementById("signal").innerHTML = "🟢 BUY";
+  document.getElementById("confidence").innerHTML = "Confidence: 78%";
+}
+</script>
 
 </body>
 </html>

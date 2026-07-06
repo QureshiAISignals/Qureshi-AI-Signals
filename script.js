@@ -29,3 +29,12 @@ document.getElementById("trend").innerHTML="Trend: "+trend;
 document.getElementById("reason").innerHTML="Reason: "+reason;
 
 }
+function runAI(){
+
+let indicators = getIndicators();
+
+let score = calculateAIScore(indicators);
+
+alert("AI Score : " + score);
+
+}

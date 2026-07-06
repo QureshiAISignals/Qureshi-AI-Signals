@@ -1,0 +1,15 @@
+const AI_CONFIG = {
+
+MIN_CONFIDENCE: 70,
+
+STRONG_BUY: 85,
+
+BUY: 70,
+
+WAIT: 50,
+
+SELL: 30,
+
+VERSION: "0.8"
+
+};
